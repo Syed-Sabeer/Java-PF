@@ -53,3 +53,53 @@ public class Question2 {
         }
     }
 }
+
+
+
+
+//         Explanation
+
+// 1. First, we import some built-in Java classes:
+//    - FileReader: To open the file.
+//    - BufferedReader: To read the file line by line easily.
+//    - FileNotFoundException: To handle error when file is missing or name is wrong.
+//    - IOException: To catch any other errors while reading the file.
+
+// 2. We use try-catch blocks here. Why?
+//    Because something might go wrong (like file is missing).
+//    try { } means "try this code"
+//    catch (Exception e) { } means "if error happens, do this instead"
+
+// 3. Inside the try block:
+//    - We try to open the file using:
+//      FileReader fileReader = new FileReader("datsa.txt");
+//      Note: 'datsa.txt' has a typo, so it will throw an error (which is good for testing).
+
+// 4. Then we wrap it in BufferedReader like this:
+//    BufferedReader reader = new BufferedReader(fileReader);
+
+// 5. After that, we read the first line:
+//    String line = reader.readLine();
+//    And split it using TAB:
+//    String[] words = line.split("\t");
+
+// 6. We go through each word using a while loop and print it in CAPITAL letters.
+
+// 7. At the end, we close the file using:
+//    reader.close();
+
+// 8. Now the important part — catch blocks:
+
+//    - If the file is NOT FOUND or has a wrong name:
+//      catch (FileNotFoundException e) {
+//          System.out.println("Error: The file 'data.txt' could not be opened.");
+//      }
+//      So this is how we know the file was NOT opened.
+
+//    - If there’s some other problem while reading (maybe file got corrupted or unreadable):
+//      catch (IOException e) {
+//          System.out.println("Error while reading the file.");
+//      }
+
+
+// inshort We use try-catch block. If the file can't be opened, Java will jump into the catch (FileNotFoundException e) block, and print a message that the file couldn't be opened. That’s how we check if the file was not opened.

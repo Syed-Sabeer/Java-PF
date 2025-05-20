@@ -38,3 +38,34 @@ public class Question1 {
         reader.close();
     }
 }
+
+
+
+//                  Explanation of This Program
+
+// 1. First, we import some built-in Java classes:
+//    - FileReader: This is used to open and read the file.
+//    - BufferedReader: This helps us read the file line by line easily.
+
+// 2. Then we create a FileReader object like this:
+//    FileReader fileReader = new FileReader("data.txt");
+//    This line basically tells Java to open the file named "data.txt".
+
+// 3. Now we wrap that FileReader inside a BufferedReader:
+//    BufferedReader reader = new BufferedReader(fileReader);
+//    This makes it easier to read one full line from the file at a time.
+
+// 4. To read a line from the file, we write:
+//    String line = reader.readLine();
+//    This line reads the first line of text from the file and saves it into a variable called "line".
+
+// 5. If the file has data separated by TABs (like This    Is    Sabeer), we can split it like this:
+//    String[] words = line.split("\t");
+//    Now each word (or field) is saved separately in an array called "words".
+
+// 6. We can use a while loop to go through each word and do something with it:
+//    For example, printing each word in capital letters using System.out.println().
+
+// 7. Finally, we must close the file using:
+//    reader.close();
+//    This is very important. It closes the file and frees up memory so the file doesn’t stay open.

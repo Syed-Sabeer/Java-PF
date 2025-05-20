@@ -23,7 +23,7 @@ public class Question4 {
                 // Print the current line
                 System.out.println(line);
             }
-
+                
             //  After all lines are read, print this message
             System.out.println("END OF THE FILE HAS REACHED");
 
@@ -36,3 +36,32 @@ public class Question4 {
         }
     }
 }
+
+
+//   Explanation
+// 1. Import the Java classes needed:
+//    - FileReader: To open the file.
+//    - BufferedReader: To read text line by line easily.
+//    - IOException: To handle any errors during file operations.
+
+// 2. Inside main method, use try-catch to handle possible errors.
+
+// 3. In try block:
+//    - Open the file using FileReader.
+//    - Wrap it with BufferedReader for easy line-by-line reading.
+
+// 4. Create a String variable "line" to store each line read.
+
+// 5. Use a while loop:
+//    - The condition (line = reader.readLine()) != null means:
+//      Keep reading a new line and assign it to "line".
+//      If the line is not null (file not ended), continue the loop.
+//    - Inside the loop, print the current line.
+
+// 6. When no more lines to read (readLine returns null), exit the loop.
+
+// 7. Print the message "END OF THE FILE HAS REACHED".
+
+// 8. Close the BufferedReader to free resources.
+
+// 9. In catch block, print an error message if reading fails.

@@ -36,3 +36,37 @@ public class Question3 {
 
     // actually this program is same as Question 1 here we are not using split function to show every word separately
 }
+
+//                      Explanation
+
+// 1. Import the built-in Java classes:
+//    - FileReader: Opens the file from your computer.
+//    - BufferedReader: Helps read the file line by line (very useful).
+//    - IOException: Handles any input/output error that might happen.
+
+// 2. Inside the main method, we use try-catch block:
+//    - try { } contains the code we *want* to run.
+//    - catch (IOException e) { } will run *if something goes wrong* (like missing file).
+
+// 3. In the try block:
+//    - First, we open the file using:
+//      FileReader fileReader = new FileReader("data.txt");
+
+// 4. Then we wrap it with BufferedReader:
+//    - BufferedReader reader = new BufferedReader(fileReader);
+//    - This lets us read full lines easily using `.readLine()`.
+
+// 5. Now we read ONE line using:
+//    - String line = reader.readLine();
+//    - This will only read the first line of the file (not the whole file).
+
+// 6. We check if the line is NOT null:
+//    - That means the file is not empty, so we print it on the screen.
+//    - If the file is empty (line is null), we show "File is empty."
+
+// 7. Then we close the file using:
+//    - reader.close();  → Always close the file after you're done.
+
+// 8. If anything goes wrong (like file missing or error while reading):
+//    - The catch block will run and print: "Error reading the file."
+
