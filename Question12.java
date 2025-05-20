@@ -90,12 +90,12 @@ public class Question12 {
             System.out.println(header);  // First, print the header again
 
             // Now print each record in the sorted list
-            //  as we use .length for array similarly we use .siez for list
+            //  as we use .length for array similarly we use .size for list
            for (int i = 0; i < records.size(); i++) {
             // String[] means array of strings
     String[] record = records.get(i); // Get each record (array of fields)
     System.out.println(String.join("\t", record)); // Join and print
-    
+
     // String.join("\t", record) takes all the strings inside the record array and combines them into one single string, putting the separator "\t" (a tab character) between each element.
 
 //     Example:
