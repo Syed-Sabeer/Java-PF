@@ -13,7 +13,7 @@ public class Question5 {
 
             // Just read and print the first line (optional step)
             String line = reader.readLine();
-            System.out.println("File opened successfully. First line: " + line);
+            System.out.println("File opened successfully. \nFirst line: " + line);
 
         } catch (IOException e) {
             // If file could not be opened or there was an error
