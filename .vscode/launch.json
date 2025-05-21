@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RepIdTodayClass",
+            "request": "launch",
+            "mainClass": "RepIdTodayClass",
+            "projectName": "Java-PF_b2dbf309"
+        },
+        {
+            "type": "java",
+            "name": "Question10",
+            "request": "launch",
+            "mainClass": "Question10",
+            "projectName": "Java-PF_b2dbf309"
+        },
+        {
+            "type": "java",
+            "name": "Question4",
+            "request": "launch",
+            "mainClass": "Question4",
+            "projectName": "Java-PF_b2dbf309"
+        },
+        {
+            "type": "java",
+            "name": "Question3",
+            "request": "launch",
+            "mainClass": "Question3",
+            "projectName": "Java-PF_b2dbf309"
+        },
+        {
+            "type": "java",
+            "name": "Question2",
+            "request": "launch",
+            "mainClass": "Question2",
+            "projectName": "Java-PF_b2dbf309"
+        },
+        {
+            "type": "java",
+            "name": "Question1",
+            "request": "launch",
+            "mainClass": "Question1",
+            "projectName": "Java-PF_b2dbf309"
+        },
+        {
+            "type": "java",
+            "name": "binarysort",
+            "request": "launch",
+            "mainClass": "binarysort",
+            "projectName": "Java-PF_b2dbf309"
+        },
+        {
+            "type": "java",
             "name": "check",
             "request": "launch",
             "mainClass": "check",
